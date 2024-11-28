@@ -1,0 +1,76 @@
+/* Global Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+}
+
+section {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+/* Flexbox Styles */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex-item {
+    background: #ffb703;
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-item {
+    background: #8ecae6;
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+/* Gaya untuk gambar produk */
+.flex-item img, .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk teks produk */
+.flex-item p, .grid-item p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
